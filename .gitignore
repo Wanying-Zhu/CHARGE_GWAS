@@ -3,4 +3,6 @@
 
 ###############################
 # Un-ignore the affected subdirectory
+# Add files by: git add *
 !/code_and_ipynb_example/
+
