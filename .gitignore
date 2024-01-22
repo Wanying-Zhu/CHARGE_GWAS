@@ -1,0 +1,6 @@
+/**
+!/.gitignore
+
+###############################
+# Un-ignore the affected subdirectory
+!/code_and_ipynb_example/
