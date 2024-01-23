@@ -1,0 +1,12 @@
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG LTST male
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG LTST female
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG LTST combined
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG STST male
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG STST female
+bash 06-1_run_GEM2CHARGEGLI.sh MFBG STST combined
+bash 06-1_run_GEM2CHARGEGLI.sh GHB LTST male
+bash 06-1_run_GEM2CHARGEGLI.sh GHB LTST female
+bash 06-1_run_GEM2CHARGEGLI.sh GHB LTST combined
+bash 06-1_run_GEM2CHARGEGLI.sh GHB STST male
+bash 06-1_run_GEM2CHARGEGLI.sh GHB STST female
+bash 06-1_run_GEM2CHARGEGLI.sh GHB STST combined
