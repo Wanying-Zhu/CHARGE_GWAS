@@ -44,7 +44,7 @@ genotype_path=/data100t1/home/wanying/CCHC/CHARGE_GWAS/GEM_genotype_files
 /data100t1/home/wanying/downloaded_tools/GEM/GEM_1.4.5_static \
 --pfile ${genotype_path}/CCHC_chr${chr_num} \
 --pheno-file ${path}/${trait}.sleep.${sex}.pheno.csv \
---sampleid-name genotype_ID \
+--sampleid-name EGO \
 --pheno-name ${trait}_ERROR_RESIDUAL_winsorized \
 --covar-names ${covars} \
 --robust 1 \
