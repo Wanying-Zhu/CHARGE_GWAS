@@ -10,7 +10,7 @@ sex=$3
 model1_output=/data100t1/home/wanying/CCHC/CHARGE_GWAS/202311_Heming_sleep_glycemia/output/chr22_GEM_${trait}_${exposure}_CCHC_${sex}_M1.txt
 model2_output=/data100t1/home/wanying/CCHC/CHARGE_GWAS/202311_Heming_sleep_glycemia/output/chr22_GEM_${trait}_CCHC_${sex}_M2.txt
 
-output_fn=PHASE2.CCHC.HIS.${trait}.${exposureure}.${sex}.20240122.txt.gz
+output_fn=PHASE2.CCHC.HIS.${trait}.${exposure}.${sex}.20240122.txt.gz
 output_fn=${output_fn^^} # To upper case
 
 
