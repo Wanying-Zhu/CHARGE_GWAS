@@ -20,7 +20,7 @@ then
     echo "Running model 1: chr${chr_num}, trait=${trait}, sex=${sex}"
     covars="age age2 PC1 PC2 PC3 PC4 PC5 age*${exposure} age2*${exposure}"
     out_fn="chr${chr_num}_GEM_${trait}_${exposure}_CCHC_${sex}_M1.txt"
-    exposure_str="--exposure-names ${exposure}"
+    exposure_robust_str="--exposure-names ${exposure} --robust 1"
     # Check if sex combined or not (combined, female or male)
     if [ $sex = "combined" ]
     then
@@ -30,7 +30,7 @@ else
     echo "Running model 2: chr${chr_num}, trait=${trait}, sex=${sex}, exposure=${exposure}"
     covars="age age2 PC1 PC2 PC3 PC4 PC5"
     out_fn="chr${chr_num}_GEM_${trait}_CCHC_${sex}_M2.txt"
-    exposure_str=""
+    exposure_robust_str=""
     # Check if sex combined or not (combined, female or male)
     if [ $sex = "combined" ]
     then
@@ -47,11 +47,10 @@ genotype_path=/data100t1/home/wanying/CCHC/CHARGE_GWAS/GEM_genotype_files
 --sampleid-name EGO \
 --pheno-name ${trait}_ERROR_RESIDUAL_winsorized \
 --covar-names ${covars} \
---robust 1 \
 --center 0 \
 --output-style meta \
 --out ${out_fn} \
-${exposure_str} \
+${exposure_robust_str}
 
 
 
